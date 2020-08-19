@@ -1,0 +1,42 @@
+package myPackage;
+
+public class Hours
+{
+        
+  public void ConvertHours(int n) 
+  { 
+     int minutes, seconds; 
+     minutes = n * 60; 
+     seconds = n * 3600; 
+      System.out.println( "Minutes = " + minutes + ", Seconds = " + seconds); 
+   } 
+ public void ConvertSeconds(int sec) 
+  { 
+        int p2 = sec / 60;
+        int p3 = p2 % 60;
+        p2 = p2 / 60;
+        System.out.println( "Hours = " +p2 +"Minutes = " + p3);
+    }    
+  public void ConvertMinutes(int t) 
+  { 
+  int hours = t / 60;
+  int seconds=t*60
+  System.out.println( "Seconds = " + seconds
+        + ", Hours = " + hours); 
+  } 
+
+}
+
+
+import myPackage.Hours;
+public class Time
+{
+   public static void main(String args[]) 
+   {       
+      int h=5,m=30,s=7809;
+      Hours o = new Hours();
+      ob.ConvertHours(h);
+      ob.ConvertMinutes(m);
+      ob.ConvertSeconds(s);
+   }
+}

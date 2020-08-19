@@ -1,0 +1,34 @@
+package myPackage;
+
+public class MyClass1
+{
+    public void getNames(String s)
+    {        
+        System.out.println(s);        
+    }
+}
+
+package myPack;
+
+public class MyClass2
+{
+    public void getNo(int i)
+    {        
+        System.out.println(i);        
+    }
+}
+
+import myPackage.MyClass1;
+import myPack.MyClass2;
+public class PrintNameNo
+{
+   public static void main(String args[]) 
+   {       
+      String name = "RamaKrishnan";
+      int no=78;
+      MyClass1 obj1 = new MyClass1();
+       MyClass2 obj2 = new MyClass2();
+      obj1.getNames(name);
+      obj2.getNo(no);
+   }
+}
